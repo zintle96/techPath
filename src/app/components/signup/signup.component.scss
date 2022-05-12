@@ -1,0 +1,108 @@
+.navbar {
+    background-color: #ceba60ee;
+}
+
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.navbar .container .logo img {
+    height: 30%;
+    width: 30%;
+    object-fit: contain;
+    border-radius: 10rem;
+}
+
+
+
+
+.gradient-custom {
+    
+    margin-top: 120px;
+  }
+
+  .gradient-custom .card {
+    border: 1px solid #DFC13F;
+  }
+
+ 
+  
+#signup{
+    font-style: normal;
+    font-weight: 600 !important;
+}
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+    top: 13px;
+  }
+.options {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+  .form-check-label{
+      cursor: pointer;
+  }
+
+.form-control, .form-control-lg {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: #DFC13F !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    padding: 0px !important;
+    color: #000;
+    height: auto;
+    border-radius: 0;
+    background-color: #fff;
+    background-clip: padding-box;}
+
+.form.control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #fff;
+        outline: 0;
+        box-shadow: none;
+    }
+
+.form-control-lg {
+    cursor: pointer;
+}
+
+
+#btn{
+    background-color: #A95534;
+    color: #ffffff;
+}
+#btn:hover {
+    background-color: #ffffff;
+    color: #A95534;
+}
+
+@media screen and (max-width: 600px){
+    .options{
+        flex-direction: column;
+    }
+
+    .container {
+        margin-bottom: 50px;
+        
+    }
+
+    footer {
+        margin-top: 170px;
+    }
+    
+}

@@ -1,0 +1,16 @@
+<div style="padding: 20mm">
+
+    <input type="file" name="file" (input)="onFileChanged($event)"  accept=".jpeg,.jpg,.png,.svg" />
+    <br />
+  
+    <img [src]="downloadableURL"  onerror="this.onerror=null;this.src='assets/noimage.jpg';"  width="300px" height="300px"/>
+    
+    <br />
+  <div *ngFor="let pics of  downloadableURL">
+    {{ pics }}
+  </div>
+   
+    
+  
+  
+  </div>

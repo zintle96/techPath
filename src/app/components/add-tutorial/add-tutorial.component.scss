@@ -1,0 +1,113 @@
+.submit-form {
+    max-width: 300px;
+    margin: auto;
+  }
+  .navbar {
+    background-color: #ceba60ee;
+}
+
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.navbar .container .logo img {
+    height: 30%;
+    width: 30%;
+    object-fit: contain;
+    border-radius: 10rem;
+}
+
+
+
+.description{
+  padding-bottom: 0;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  padding: 3rem 2rem;
+  border-radius: 50px;
+  border: 1px solid #ceba60ee;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+  border-top-color: rgba(225,225,225, 0.1);
+  border-left-color: rgba(225,225,225, 0.1);
+  border-bottom-color: rgba(225,225,225, 0.1);
+  border-right-color: rgba(225,225,225, 0.1);
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7rem;
+  
+}
+
+h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn{
+   margin-top:10px ;
+   background-color: #A95534;
+   color: #ffffff;
+}
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-group textarea {
+ display: flex;
+}
+
+.form-group label {
+margin-top: 10px;
+  
+}
+
+
+.form-group input {
+  border: none;
+  border-bottom: 1px solid #DFC13F;
+  box-sizing: border-box;
+  outline: 0;
+  margin-top: 5px;
+}
+
+.form-group textarea {
+
+  width: 300px;
+  border: 1px solid #DFC13F;
+  box-sizing: border-box;
+  margin-top: 5px;
+  
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .card {
+    min-width: 150px;
+  }
+  
+}
+
+.submit a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 600px){
+
+  .card {
+
+    margin-left: 12px;
+    width: 350px;
+    
+  }
+  
+}

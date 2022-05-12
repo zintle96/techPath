@@ -1,0 +1,297 @@
+<!-- Navbar -->
+<nav  class="navbar navbar-expand-lg navbar-light py-3 ">
+  <div class="container">
+      <div class="logo">
+      <a href="" ><img src="assets/images/tech.jpg" style="width: 80px; height: 80px"></a>
+      <!--<a href="#" class="navbar-brand" style="margin-left: 20px"></a>-->
+
+      </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+                      
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link" >Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Mentors</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/dashboard" class="dropdown-item">Find Mentors</a></li>
+            <li><a routerLink="/signup" class="dropdown-item">Become a Mentor</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Blogs</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/blogs" class="dropdown-item">Our blogs</a></li>
+            <li><a (click)="onClick('boxes')" class="dropdown-item">Articles</a></li>
+            <li><a (click)="onClick('faq')" class="dropdown-item">FAQ's</a></li>
+            </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Image slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/codingbooks.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3>IT</h3>
+          <p> Before you study IT, Know what you're getting into.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/code.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3>Why IT?</h3>
+          <p>To establish faster communication, maintain electronic storage and provide protection to records..</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/sa.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h3>You've got this</h3>
+          <p>Interact with other Developers and Mentors in the IT industry.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Boxes -->
+  <section id="boxes" class="p-5">
+    
+      <!-- <div class="d-md-flex justify-content-between align-items-center"> -->
+        
+    <div class="container">
+      <h3 class="path mb-1 mb-md-0">A path to a career in Information Technology</h3>
+      <div class="row text-center g-4" >
+        <div class="col-md">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <span class="material-icons">
+                <img src="assets/images/softwaredevelopment.jpg" alt="">
+                </span>
+              <h3 class="card-title mb-3">What is Software Development?</h3>
+              <p class="card-text p-2">
+                Software development refers to a set of computer science activities 
+                dedicated to the process of creating, 
+                designing, deploying and supporting software.
+              </p>
+              <a routerLink="/fitness" class="btn btn-warning text-light">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <span class="material-icons">
+                <img src="assets/images/programming.jpg" alt="">
+                </span>
+              <h3 class="card-title mb-3">What do you mean by programming?</h3>
+              <p class="card-text">
+                
+              Programming is the process of creating a set of instructions that tell a computer 
+              how to perform a task. Programming can be done using a 
+              variety of computer programming languages.
+        
+                </p>
+              <a routerLink="/covid" class="btn btn-warning text-light">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <span class="material-icons">
+                    <img src="assets/images/ai.jpg" alt="">
+                    </span>
+                <h3 class="card-title mb-3">Artificial Intelligence</h3>
+                <p class="card-text">
+                  Artificial intelligence (AI) is the ability of a computer or a robot controlled 
+                  by a computer to do tasks that are usually 
+                  done by humans because they require human intelligence and discernment.
+                    
+                </p>
+                <a routerLink="/mental" class="btn btn-warning text-light">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <span class="material-icons">
+                    <img src="assets/images/datascience.jpg" alt="">
+                    </span>
+                <h3 class="card-title mb-3"> What is Data science?</h3>
+                <p class="card-text">
+                    
+                  Data science can be defined as an interdisciplinary field of study that uses 
+                  data for various research and reporting purposes to derive insights
+                </p>
+                <a routerLink="/acne" class="btn btn-warning text-light">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <span class="material-icons">
+                    <img src="assets/images/languages.png" alt="">
+                    </span>
+                <h3 class="card-title mb-3">programming languages</h3>
+                <p class="card-text">
+                  Whether you’re looking to begin coding as a hobby, a new career, or just to enhance your current role, the first thing you’ll 
+                  have to do is decide which programming language you want to start with.
+                </p>
+                <a  routerLink="/nutrition" class="btn btn-warning text-light">Read More</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="faq" >
+    
+      <!-- <div class="d-md-flex justify-content-between align-items-center"> -->
+        
+    
+        <div class="container" class="q-container">
+          <h3 class="frequent mb-1 mb-md-0" >Frequently Asked Questions</h3>
+          <div class="accordion" id="accordionExample">
+               <!-- First One  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" 
+                  aria-expanded="false" aria-controls="collapseOne" >
+                  What do you need to start learning IT?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" 
+                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                  Honestly, you just need your strong will and determination. It is 
+                  a scary field but if you put your effort you will make it.
+                  </p>
+                  </div>
+                </div>
+              </div>
+      
+               <!-- Second  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+                  aria-expanded="false" aria-controls="collapseTwo" style="border-color:rgba(3, 68, 165, 0.8) ;">
+                  Is Maths a pre-requisite to learn Coding?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" 
+                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <p>
+                      As much as Maths inspires modelling, creativity and analysis, you can still 
+                      learn coding and be good at it without Maths. Coding is about logic while writing 
+                      a language that can be understood by computers.
+                      </p>
+                  </div>
+                </div>
+              </div>
+      
+               <!-- Third  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+                  aria-expanded="false" aria-controls="collapseThree">
+                  How long does it take you to learn one Computer Language?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" 
+                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <p>
+                      It all depends on how much effort do you put on your learning. As long as you are 
+                      dedicated and consistent you can achieve a lot within a short space of time if you doing 
+                      with understanding and the help of others who understanding much better than you.
+                      </p>
+                  </div>
+                </div>
+              </div>
+              
+               <!-- Fourth  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseFour" 
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Which programming language can a novice start with?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <p>
+                          I will recommend Python, one could recommend JavaScript for these two languages are close to English language. 
+                      Whatever code you write in Python language is easily readable in English terms and makes sense.
+                      </p>
+                  </div>
+                </div>
+              </div>
+      
+               <!-- Fifth  -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" 
+                  aria-expanded="false" aria-controls="collapseFive">
+                  Where can I get a formal training for IT?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <p>
+                          You can apply to tertiary where you can go through for study if you qualify for their 
+                          minimum requirements. Another way is to look for Bootcamps within the city and apply for them, 
+                          some Bootcamps are for novices and some Bootcamps target a certain group to work with.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+      </div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="p-5 text-light text-center position-relative" style="background-color: #ceba60ee;">
+    <div class="container">
+      <p class="lead">Created by codeTech Copyright &copy; 2021 techPath blog</p>
+
+    </div>
+  </footer>

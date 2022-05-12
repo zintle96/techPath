@@ -1,0 +1,99 @@
+ <nav  class="navbar navbar-expand-lg  navbar-dark py-3 ">
+    <div class="container">
+        <div class="logo">
+        <a routerLink="/landing-page" ><img src="assets/images/tech.jpg"></a>
+        <a href="#" class="navbar-brand" style="margin-left: 20px;"></a>
+
+        </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a routerLink="/dashboard" class="nav-link" style="color: aliceblue;">Blogs</a>
+          </li>
+      
+         
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--
+  <section class="p-5">
+    <div class="container heading">
+      <div class="row text-center g-4">
+        <div class="col-md-12">
+            <h2 class="text-dark text-center">Meet Our Mentors</h2>
+      </div>
+        <div class="col-md" *ngFor="let user of Users">
+          <div class="card bg-light text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <img src="assets/icon/person-circle.svg" alt="">
+              </div>
+              <h5 class="card-title mb-3">{{user.Firstname}} {{user.Lastname}}</h5>
+              <h5 class="card-title mb-3">{{user.Profession}}</h5>
+              <h5 class="card-title mb-3">{{user.Gender}}</h5>
+              <p class="card-text">
+                 {{user.email}}
+              </p>
+              <span  routerLink="/dashboard/{{user.id}}" class="btn btn-warning text-light">View Profile</span>
+            </div>
+          </div>
+        </div>
+  
+    </div>
+  </div>
+</section> -->
+
+
+ <div class="div profile-area">
+   <div class="div container">
+     <div class="row">
+      <div class="col-md-4 p3" *ngFor="let user of Users | paginate: 
+      {itemsPerPage: 3, currentPage: p, totalItems: totalRecords}; let i = index" >
+        <div class="card text-center" style="height: 30rem;">
+          <div class="header">
+            <div class="img1"><h3>Mentor</h3></div>
+            <div class="img2"><img src="assets/icon/person-circle.svg" alt=""></div>
+            <div class="main-text">
+              <h3>{{user.name}} {{user.surname}}</h3>
+              <p>{{user.intro}}.</p>
+            </div>
+            <div class="btn">
+              <button routerLink="/dashboard/{{user.id}}" type="button" class="btn btn-outline-warning btn-md">View Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pagination-container" class="text-center">
+        <pagination-controls (pageChange)="p = $event" active-color="#DFC13F"></pagination-controls>
+      </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 

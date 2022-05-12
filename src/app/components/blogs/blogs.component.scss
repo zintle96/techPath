@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+.body {
+  background-color: #ceba60ee;
+}
+
+  .navbar {
+    background-color: #ceba60ee;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.navbar .container .logo img {
+    height: 30%;
+    width: 30%;
+    object-fit: contain;
+    border-radius: 10rem;
+}
+
+h2{
+  padding-left: 25%;
+  
+}
+
+.active{
+  background-color: #A95534;
+  border-color: #A95534;
+}
+
+.title {
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 40rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  padding: 3rem 2rem;
+  border-radius: 50px;
+  border: 1px solid #ceba60ee;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+  border-top-color: rgba(225,225,225, 0.1);
+  border-left-color: rgba(225,225,225, 0.1);
+  border-bottom-color: rgba(225,225,225, 0.1);
+  border-right-color: rgba(225,225,225, 0.1);
+  margin: 20px 20px 20px 20px;
+  
+}
+
+.cb1 {
+  background-color: linear-gradient(to right bottom, rgba(225,225,225, 0.5), rgba(225,225,225, 0.3));
+  
+}
+
+.card-body:hover .card-text {
+  border-color: #DFC13F;
+  transition: .7s;
+}
+
+.card-text {
+  font-size: 2rem;
+}
+
+.card-body .btn {
+  margin-top: 20px;
+  color: #DFC13F;
+}
+
+.card-body .btn:hover {
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 90%;
+  max-width: 800px;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  
+  
+ 
+}
+
+.modal-footer  {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+@media  screen and (max-width: 600px){
+  
+
+  .nav-item {
+      text-align: right;
+  }
+}
+
+
+
+

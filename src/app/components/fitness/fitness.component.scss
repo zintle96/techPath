@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #ceba60ee;
+}
+
+.nav-item a {
+    color: #ffffff;
+}
+
+.nav-item a:hover {
+    color: #000000;
+}
+
+.navbar .container .logo img {
+    height: 30%;
+    width: 30%;
+    object-fit: contain;
+    border-radius: 10rem;
+}
+
+.blog {
+    padding-top: 130px;
+}
+
+.container .card-body img {
+    width: 60%;
+}
+
+.btn {
+    background-color: #A95534;
+    
+}
